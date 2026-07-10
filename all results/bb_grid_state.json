@@ -1,0 +1,42 @@
+{
+ "m2.0_f0.05_s42": {
+  "shots": 4000,
+  "errs_mis": 63,
+  "errs_orc": 61
+ },
+ "m4.0_f0.05_s42": {
+  "shots": 4000,
+  "errs_mis": 103,
+  "errs_orc": 94
+ },
+ "m6.0_f0.05_s42": {
+  "shots": 4000,
+  "errs_mis": 207,
+  "errs_orc": 152
+ },
+ "m8.0_f0.05_s42": {
+  "shots": 2000,
+  "errs_mis": 167,
+  "errs_orc": 98
+ },
+ "m4.0_f0.2_s42": {
+  "shots": 3000,
+  "errs_mis": 583,
+  "errs_orc": 409
+ },
+ "m8.0_f0.2_s42": {
+  "shots": 1500,
+  "errs_mis": 1106,
+  "errs_orc": 827
+ },
+ "m10.0_f0.05_s43": {
+  "shots": 3000,
+  "errs_mis": 262,
+  "errs_orc": 133
+ },
+ "m10.0_f0.05_s44": {
+  "shots": 2000,
+  "errs_mis": 202,
+  "errs_orc": 106
+ }
+}
