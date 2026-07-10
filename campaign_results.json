@@ -1,0 +1,119 @@
+{
+ "part1_brittleness_grid": {
+  "code": "[[72,12,6]], p_base=0.003, 6 rounds, BP+OSD-CS7, mismatched vs oracle prior on identical shots",
+  "severity_sweep_frac0.05_seed42": {
+   "2x": {
+    "shots": 4000,
+    "mis_ler": 0.0158,
+    "orc_ler": 0.0152,
+    "ratio": 1.03
+   },
+   "4x": {
+    "shots": 4000,
+    "mis_ler": 0.0257,
+    "orc_ler": 0.0235,
+    "ratio": 1.1
+   },
+   "6x": {
+    "shots": 4000,
+    "mis_ler": 0.0517,
+    "orc_ler": 0.038,
+    "ratio": 1.36
+   },
+   "8x": {
+    "shots": 2000,
+    "mis_ler": 0.0835,
+    "orc_ler": 0.049,
+    "ratio": 1.7
+   },
+   "10x": {
+    "shots": 5000,
+    "mis_ler": 0.1236,
+    "orc_ler": 0.0698,
+    "ratio": 1.77
+   }
+  },
+  "pattern_variance_10x_frac0.05": {
+   "seed42": 1.77,
+   "seed43": 1.97,
+   "seed44": 1.97
+  },
+  "fraction_0.2_seed42": {
+   "4x": {
+    "shots": 3000,
+    "mis_ler": 0.1943,
+    "orc_ler": 0.1363,
+    "ratio": 1.43
+   },
+   "8x": {
+    "shots": 1500,
+    "mis_ler": 0.7373,
+    "orc_ler": 0.5513,
+    "ratio": 1.34,
+    "note": "above threshold; ratio compresses when code is overwhelmed"
+   }
+  }
+ },
+ "part2_adaptive_EM": {
+  "method": "decode-and-count EM: decode unlabeled syndromes, priors <- mechanism usage frequency, floor 5e-5",
+  "eval": "held-out shots 15000:20000, headline config 10x/5%/seed42, all via same ldpc code path",
+  "results": {
+   "mismatched_p0": {
+    "errs": 566,
+    "ler": 0.1132
+   },
+   "adapted_1000_calib_shots": {
+    "errs": 395,
+    "ler": 0.079,
+    "gap_recovered": "71%"
+   },
+   "adapted_5000_calib_iter1": {
+    "errs": 336,
+    "ler": 0.0672,
+    "gap_recovered": "95%"
+   },
+   "adapted_5000_calib_iter2": {
+    "errs": 349,
+    "ler": 0.0698,
+    "note": "converged at iter1, stable"
+   },
+   "oracle_true_priors": {
+    "errs": 324,
+    "ler": 0.0648
+   }
+  },
+  "context": "surface-code pairwise estimator FAILED at 1000 shots (-9% recovery); EM on hypergraph recovers 71%"
+ },
+ "part1_extension": {
+  "code_size_scaling": {
+   "[[72,12,6]]_10x_5pct": 1.77,
+   "[[144,12,12]]_10x_5pct": {
+    "mis": "113/3000 (3.77%)",
+    "orc": "51/2800 (1.82%)",
+    "ratio": 2.07
+   },
+   "finding": "brittleness GROWS with code size"
+  },
+  "spam_mismatch_3x_uniform": {
+   "mis": "73/3000 (2.43%)",
+   "orc": "61/3000 (2.03%)",
+   "ratio": 1.2,
+   "finding": "uniform channel-class mismatch is mild; spatial structure is what hurts"
+  }
+ },
+ "part2_extension": {
+  "em_shot_budget_curve": {
+   "500": "9.46% (38% recovered)",
+   "1000": "7.90% (71%)",
+   "2000": "7.08% (88%)",
+   "5000": "6.72% (95%)"
+  },
+  "drift_recalibration_demo": {
+   "setup": "EM calibrated on pattern A; noise drifts to pattern B (both 10x/5%)",
+   "no_calibration": "293/3000 (9.77%)",
+   "stale_calibration": "319/3000 (10.63%) - WORSE than nothing",
+   "em_recalibrated_2000_shots": "181/3000 (6.03%) - 84% of gap recovered",
+   "oracle": "159/3000 (5.30%)"
+  }
+ }
+}

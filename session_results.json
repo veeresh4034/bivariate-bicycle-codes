@@ -1,0 +1,19 @@
+{
+ "verification": {
+  "code_params": "[[72,12,6]] k=12 confirmed by independent rank; CSS holds",
+  "baseline_scaling": "LER exponent ~3 between p=0.001-0.002 confirms circuit distance",
+  "baseline": {
+   "p=0.001": "2.33e-4 (14/60000)",
+   "p=0.002": "2.13e-3 (64/30000)",
+   "p=0.003": "1.14e-2 (341/30000)"
+  }
+ },
+ "mismatch_result": {
+  "config": "p=0.003, 5% qubits at 10x, 6 rounds, BP+OSD-CS7",
+  "mismatched_LER": 0.1236,
+  "oracle_LER": 0.0698,
+  "errors": "618 vs 349 on same 5000 shots",
+  "ratio": 1.77,
+  "surface_code_same_config_ratio": 1.6
+ }
+}

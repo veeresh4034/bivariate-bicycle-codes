@@ -1,0 +1,17 @@
+{
+ "PUBLISHABLE_GRADE_NOW": {
+  "brittleness_at_severe_mismatch": "1.77 +/- 0.23 on [[72,12,6]] (p<0.001); 2.07 +/- 0.68 on [[144,12,12]]; robust to BP iters (1.61 at 100 iters)",
+  "EM_recovery": "95% of oracle gap at 5k shots, 7.7 sigma",
+  "recalibration_after_drift_helps": "5.1 sigma",
+  "negative_control": "no significant EM harm under matched noise (0.7 sigma diff)",
+  "pipeline_verification": "k=12 by independent rank; CSS holds; LER exponent ~3 confirms circuit distance"
+ },
+ "NOT_YET_PUBLISHABLE_needs_more_shots": {
+  "severity_onset_shape": "2x (1.03+/-0.36) and 4x (1.10+/-0.31) consistent with no effect; need ~1600 errors/arm (~60k+ shots each)",
+  "code_size_scaling": "2.07 vs 1.77 overlapping CIs; need ~5x errors both codes",
+  "stale_worse_than_nothing": "only 1.1 sigma - currently a hypothesis, not a finding",
+  "SPAM_ratio": "1.20+/-0.41 consistent with 1.0; report as bound",
+  "methodology_gaps": "[[144]] needs 12 rounds not 6; multi-pattern averaging everywhere; floor-parameter ablation; regularized EM (blend with p0) for low-noise regime; independent deep literature pass"
+ },
+ "estimated_compute_to_submission_grade": "~1-2 weeks on a multicore machine with the provided checkpointing scripts; all CPU, no GPU needed"
+}

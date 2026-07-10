@@ -1,0 +1,92 @@
+{
+ "r12_144_k10": {
+  "shots": 14000,
+  "errs_mis": 1369,
+  "errs_orc": 500,
+  "chunks": 56
+ },
+ "r6_144_k10": {
+  "shots": 46000,
+  "errs_mis": 1674,
+  "errs_orc": 612,
+  "chunks": 46
+ },
+ "p002_k10": {
+  "shots": 32500,
+  "errs_mis": 763,
+  "errs_orc": 417,
+  "chunks": 13
+ },
+ "p004_k10": {
+  "shots": 7000,
+  "errs_mis": 2180,
+  "errs_orc": 1350,
+  "chunks": 7
+ },
+ "sev2_s42": {
+  "shots": 40000,
+  "errs_mis": 664,
+  "errs_orc": 661,
+  "chunks": 10
+ },
+ "sev4_s43": {
+  "shots": 16000,
+  "errs_mis": 463,
+  "errs_orc": 378,
+  "chunks": 4
+ },
+ "sev4_s44": {
+  "shots": 16000,
+  "errs_mis": 454,
+  "errs_orc": 398,
+  "chunks": 4
+ },
+ "sev8_s42": {
+  "shots": 14000,
+  "errs_mis": 1082,
+  "errs_orc": 678,
+  "chunks": 7
+ },
+ "sev8_s43": {
+  "shots": 8000,
+  "errs_mis": 542,
+  "errs_orc": 328,
+  "chunks": 4
+ },
+ "sev8_s44": {
+  "shots": 8000,
+  "errs_mis": 585,
+  "errs_orc": 355,
+  "chunks": 4
+ },
+ "sev10_s42": {
+  "shots": 12000,
+  "errs_mis": 1376,
+  "errs_orc": 795,
+  "chunks": 6
+ },
+ "sev10_s43": {
+  "shots": 8000,
+  "errs_mis": 763,
+  "errs_orc": 408,
+  "chunks": 4
+ },
+ "sev10_s44": {
+  "shots": 6000,
+  "errs_mis": 669,
+  "errs_orc": 360,
+  "chunks": 3
+ },
+ "f02_k4": {
+  "shots": 4500,
+  "errs_mis": 878,
+  "errs_orc": 645,
+  "chunks": 3
+ },
+ "spam3": {
+  "shots": 16000,
+  "errs_mis": 349,
+  "errs_orc": 342,
+  "chunks": 4
+ }
+}

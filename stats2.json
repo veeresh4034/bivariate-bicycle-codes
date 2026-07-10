@@ -1,0 +1,32 @@
+{
+ "drift_none": {
+  "shots": 21000,
+  "errs": 1884,
+  "chunks": 2
+ },
+ "drift_stale": {
+  "shots": 21000,
+  "errs": 2223,
+  "chunks": 2
+ },
+ "drift_recal": {
+  "shots": 21000,
+  "errs": 1141,
+  "chunks": 2
+ },
+ "drift_oracle": {
+  "shots": 21000,
+  "errs": 1086,
+  "chunks": 2
+ },
+ "bb144_mis": {
+  "shots": 10200,
+  "errs": 336,
+  "chunks": 3
+ },
+ "bb144_orc": {
+  "shots": 10200,
+  "errs": 135,
+  "chunks": 3
+ }
+}
